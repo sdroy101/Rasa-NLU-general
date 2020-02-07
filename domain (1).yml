@@ -1,0 +1,303 @@
+intents:
+- market_info
+- animalmanagement
+- plant_protection
+- get_hospitals_details
+- weedmanagement
+- pest_management
+- greet
+- goodbye
+- thankyou
+- deny
+- affirm
+- search_provider
+- inform
+- ask_weather
+- ask_builder
+- ask_howdoing
+- ask_howold
+- ask_restaurant
+- ask_time
+- ask_wherefrom
+- ask_whoami
+- handleinsult
+- telljoke
+- ask_whatismyname
+- ask_languagesbot
+- bot_challenge
+- mood_unhappy
+- mood_great
+- get_contact_details
+- inform_specialty
+- inform_type
+- eyecare_info
+- kidney_info
+- heart_info
+- play_new_song
+- inform_song_type1
+- inform_song_type2
+- get_cricket_scorecard
+- get_cricket_commentary
+- get_cricket_match_details
+- get_movie_details
+- get_train_details
+- inform_series_id
+- inform_match_id
+- inform_train_name
+- inform_movie_name
+- inform_news
+- inform_country
+- get_hospitals_details("location":"Gurgaon")
+- inform_speciality("organ":"heart")
+- inform_type("type":"government")
+- inform_speciality
+- inform_speciality("organ":"kidney")
+- inform_speciality("organ":"eye")
+- play_popular_song
+- get_hospitals_details("location":"Noida")
+- lpg_general
+- lpg_market
+- lpg_care
+- kindney_info
+entities:
+- company
+- crop
+- facility_id
+- facility_type
+- fruits
+- group
+- insects
+- location
+- mammals
+- medications
+- micronutrients
+- microorganisms
+- nurient_suppliers
+- organ
+- pests
+- plant
+- plants
+- type
+- series_id
+- match_id
+- train
+- movie
+- country
+- part_of_plant
+slots:
+  country:
+    type: text
+  facility_address:
+    type: unfeaturized
+  facility_id:
+    type: unfeaturized
+  facility_type:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+templates:
+  utter_address:
+  - text: The address is {facility_address}.
+  utter_ask_builder:
+  - text: The engineers at Rasa
+  - text: One of the smart engineers at Rasa!
+  utter_ask_city:
+  - text: Kripya shahar bataye.
+  utter_ask_facility_type:
+  - text: 'Choose one of the following to search for: hospital, nursing home, or home
+      health agency.'
+  utter_ask_howdoing:
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  utter_ask_howold:
+  - text: '42'
+  - text: Old enough to be a bot
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t
+      matter.
+  utter_ask_languagesbot:
+  - text: I can spell baguette in French, but unfortunately English is the only language
+      I can answer you in.
+  - text: I am in the process of learning, but at the moment I can only speak English.
+  utter_ask_location:
+  - text: Please provide your city name.
+  - text: What is your current city?
+  - text: Please provide your city name or zip code.
+  - text: Please enter your zip code or city name to find local providers.
+  utter_ask_restaurant:
+  - text: I am sorry I can’t recommend you a restaurant as I usually cook at home.
+  utter_ask_speciality:
+  - text: aapko eyecare ,kidney ya heart ki taklif hai
+  utter_ask_time:
+  - text: It is the most wonderful time of the year!
+  utter_ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny
+  - text: Honestly it's a bit too hot these days
+  - text: Blue skies and sun shine!
+  - text: Let's just say it hasn't rained in weeks
+  utter_ask_whatismyname:
+  - text: It most probably is the one that your parents have chosen for you.
+  utter_ask_wherefrom:
+  - text: I was born in Berlin, but I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth
+  utter_ask_whoami:
+  - text: I hope you are being yourself.
+  utter_continue:
+  - text: Do you want to continue the healthcare facility search?
+  - text: You are going off topic. Are you still looking for a healthcare provider?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_eyecare_hospitals_Noida_private:
+  - text: Eye Health Clinic, Shroff Eye Centre, Apex Eye Care @ SRS Hospital
+  utter_eyecare_hospitals_Noida_public:
+  - text: Tirupati Eye Centre, Vedanta Netralaya, Satya Eye Care Hospital
+  utter_eyecare_hospitals_gurgaon_private:
+  - text: Viaan eye and Retina hospital, Eye-Q Hospital, Vedic Hospitals.
+  utter_eyecare_hospitals_gurgaon_public:
+  - text: Maharaja Agrasen Hospital, Sunrise Life care , GR Memorial
+  utter_fafund:
+  - text: Mancozeb 75% WP 40-60 gram/pump spray kare
+  utter_get_contact_details:
+  - text: AGROSTAR number 1800-3000-0021
+  utter_get_hospitals_details:
+  - text: Aapko sarkari aaspatal ya private asspatal ki jaankari chahiye.
+  utter_goodbye:
+  - text: Talk to you later!
+  - text: Have a good day.
+  - text: Until next time!
+  utter_greet:
+  - text: Hello main aapki kis tarah se sahayta kar sakta hun?
+  utter_handleinsult:
+  - text: That’s not very nice.
+  utter_happy:
+  - text: Great carry on!
+  utter_heart_hospitals_Noida_private:
+  - text: Metro Hospital & Heart Institute, Kailash Hospital, Noida, Oplus Cardia
+      HEALTHCARE
+  utter_heart_hospitals_Noida_public:
+  - text: Kailash Hospital
+  utter_heart_hospitals_gurgaon_private:
+  - text: Medanta Heart Institute, Metro Heart Institute, Sacred Heart Institute
+  utter_heart_hospitals_gurgaon_public:
+  - text: Lok Kalyan Samiti, Raj Hospital
+  utter_kidney_hospitals_Noida_private:
+  - text: SJM Hospital and IVF, Fortis Hospital, Noida, Kidney Care & Stone Urology
+      Clinic
+  utter_kidney_hospitals_Noida_public:
+  - text: Dr. Bhimrao Ambedkar Multispeciality Hospital
+  utter_kidney_hospitals_gurgaon_private:
+  - text: Paras Kidney Transplant, Medanat Kidney Surgery, Artemis Hospital
+  utter_kidney_hospitals_gurgaon_public:
+  - text: No Public Hospital for Kidney
+  utter_market_info_randi:
+  - text: randi 4000/quintal
+  utter_market_info_sarso:
+  - text: sarso 3500/quintal
+  utter_noworries:
+  - text: My pleasure.
+  - text: You are welcome!
+  utter_pest_management:
+  - text: Dimethoate 30% EC 30 ml/pump spray kare
+  utter_plant_protection_anar:
+  - text: boron (Borax 10%) 60 gram/pump spray kare
+  utter_plant_protection_fafund:
+  - text: Mancozeb 75% WP 40-60 gram/pump spray kare
+  utter_plant_protection_jadfafund:
+  - text: Carbendazim 50% WP 30 gram/pump drenching OR 250 gram/vigha water treatment
+      kare
+  utter_plant_protection_khad:
+  - text: BASAL DOSE (200KG), AMMONIUM NITRATE (200 KG) , MOP ( 200 KG) AFTER  30
+      DAYS AMMONIUM NITRATE (300KG) , SOP  ( 200 KG)
+  utter_plant_protection_laarva:
+  - text: Dimethoate 30% EC 30 ml/pump spray kare
+  utter_telljoke:
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: Do you know a tree’s favorite drink? - Root beer!
+  - text: Why do the French like to eat snails so much? - They can’t stand fast food.
+  utter_weedmanagement_chaaval:
+  - text: metsulfluron mithayl 20 % wg 8 GRAM / Acre
+  utter_weedmanagement_gehu:
+  - text: Information website pe dia hua hai
+  utter_trainname:
+  - text: kripya train ka naam bataye.
+  utter_match_id:
+  - text: kripya match ka naam bataye.
+  utter_series_id:
+  - text: kripya series ka naam bataye.
+  utter_ask_song_type:
+  - text: aapko naya gaana chahiye ya popular?
+  utter_ask_movie_name:
+  - text: kripya movie ka naam bataye.
+  utter_ask_country:
+  - text: kripya desh na naam bataye.
+actions:
+- action_chitchat
+- find_facility_types
+- find_healthcare_address
+- utter_address
+- utter_ask_builder
+- utter_ask_city
+- utter_ask_facility_type
+- utter_ask_howdoing
+- utter_ask_howold
+- utter_ask_languagesbot
+- utter_ask_location
+- utter_ask_restaurant
+- utter_ask_speciality
+- utter_ask_time
+- utter_ask_weather
+- utter_ask_whatismyname
+- utter_ask_wherefrom
+- utter_ask_whoami
+- utter_continue
+- utter_did_that_help
+- utter_eyecare_hospitals_Noida_private
+- utter_eyecare_hospitals_Noida_public
+- utter_eyecare_hospitals_gurgaon_private
+- utter_eyecare_hospitals_gurgaon_public
+- utter_fafund
+- utter_get_contact_details
+- utter_get_hospitals_details
+- utter_goodbye
+- utter_greet
+- utter_handleinsult
+- utter_happy
+- utter_heart_hospitals_Noida_private
+- utter_heart_hospitals_Noida_public
+- utter_heart_hospitals_gurgaon_private
+- utter_heart_hospitals_gurgaon_public
+- utter_kidney_hospitals_Noida_private
+- utter_kidney_hospitals_Noida_public
+- utter_kidney_hospitals_gurgaon_private
+- utter_kidney_hospitals_gurgaon_public
+- utter_market_info_randi
+- utter_market_info_sarso
+- utter_noworries
+- utter_pest_management
+- utter_plant_protection_anar
+- utter_plant_protection_fafund
+- utter_plant_protection_jadfafund
+- utter_plant_protection_khad
+- utter_plant_protection_laarva
+- utter_telljoke
+- utter_weedmanagement_chaaval
+- utter_weedmanagement_gehu
+- utter_series_id
+- utter_match_id
+- action_get_cricket_commentary
+- action_get_cricket_match_details
+- action_get_train_details
+- action_get_movie_detail
+- utter_ask_song_type
+- action_play_new_song
+- action_play_popular_song
+- utter_trainname
+- action_get_cricket_scorecard
+- utter_ask_movie_name
+- utter_ask_country
+- action_give_news
+- utter_unclear
+forms:
+- facility_form
